@@ -26,9 +26,6 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("device", config.getDevice());
         mutableCapabilities.setCapability("os_version", config.getOsVersion());
         mutableCapabilities.setCapability("project", config.getProject());
-        mutableCapabilities.setCapability("device", config.getDevice());
-        mutableCapabilities.setCapability("os_version", config.getOsVersion());
-        mutableCapabilities.setCapability("project", config.getProject());
         mutableCapabilities.setCapability("build", config.getBuild());
         mutableCapabilities.setCapability("name", config.getName());
         return new RemoteWebDriver(getBrowserstackUrl(), mutableCapabilities);
